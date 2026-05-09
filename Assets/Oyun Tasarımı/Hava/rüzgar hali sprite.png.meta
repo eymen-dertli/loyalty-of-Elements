@@ -1,0 +1,1248 @@
+fileFormatVersion: 2
+guid: 69f22c8ae802a5f4899238104fa1c072
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8474551251371400212
+    second: "ru\u0308zgar hali sprite_0"
+  - first:
+      213: -1028180508688848919
+    second: "ru\u0308zgar hali sprite_1"
+  - first:
+      213: -7693034201406760126
+    second: "ru\u0308zgar hali sprite_2"
+  - first:
+      213: 6868838303729638201
+    second: "ru\u0308zgar hali sprite_3"
+  - first:
+      213: 4929884905101367455
+    second: "ru\u0308zgar hali sprite_4"
+  - first:
+      213: 516850677402591759
+    second: "ru\u0308zgar hali sprite_5"
+  - first:
+      213: 3420911554534186579
+    second: "ru\u0308zgar hali sprite_6"
+  - first:
+      213: 4649574790413599456
+    second: "ru\u0308zgar hali sprite_7"
+  - first:
+      213: 7687035295080503437
+    second: "ru\u0308zgar hali sprite_8"
+  - first:
+      213: 7835264036099597371
+    second: "ru\u0308zgar hali sprite_9"
+  - first:
+      213: -3882927996019819170
+    second: "ru\u0308zgar hali sprite_10"
+  - first:
+      213: 3575958675585485064
+    second: "ru\u0308zgar hali sprite_11"
+  - first:
+      213: -3029224680836852856
+    second: "ru\u0308zgar hali sprite_12"
+  - first:
+      213: 2684364087776548435
+    second: "ru\u0308zgar hali sprite_13"
+  - first:
+      213: -4938108799699274973
+    second: "ru\u0308zgar hali sprite_14"
+  - first:
+      213: 7884307158469286103
+    second: "ru\u0308zgar hali sprite_15"
+  - first:
+      213: 7589230763780538947
+    second: "ru\u0308zgar hali sprite_16"
+  - first:
+      213: -7461128812731523766
+    second: "ru\u0308zgar hali sprite_17"
+  - first:
+      213: 5546536701182081901
+    second: "ru\u0308zgar hali sprite_18"
+  - first:
+      213: 8007524626065262090
+    second: "ru\u0308zgar hali sprite_19"
+  - first:
+      213: 1747219729043436258
+    second: "ru\u0308zgar hali sprite_20"
+  - first:
+      213: -3842269164243366134
+    second: "ru\u0308zgar hali sprite_21"
+  - first:
+      213: -8994857272945186206
+    second: "ru\u0308zgar hali sprite_22"
+  - first:
+      213: -688595775601047409
+    second: "ru\u0308zgar hali sprite_23"
+  - first:
+      213: -8275180510277793798
+    second: "ru\u0308zgar hali sprite_24"
+  - first:
+      213: 7051334302140053921
+    second: "ru\u0308zgar hali sprite_25"
+  - first:
+      213: -6675159277115849527
+    second: "ru\u0308zgar hali sprite_26"
+  - first:
+      213: -2674183119275382401
+    second: "ru\u0308zgar hali sprite_27"
+  - first:
+      213: -2057819541226970587
+    second: "ru\u0308zgar hali sprite_28"
+  - first:
+      213: 728777319709912107
+    second: "ru\u0308zgar hali sprite_29"
+  - first:
+      213: -2449017518162087330
+    second: "ru\u0308zgar hali sprite_30"
+  - first:
+      213: 7669429379184649984
+    second: "ru\u0308zgar hali sprite_31"
+  - first:
+      213: -2767041443908028276
+    second: "ru\u0308zgar hali sprite_32"
+  - first:
+      213: 224846020703786092
+    second: "ru\u0308zgar hali sprite_33"
+  - first:
+      213: -2751222550878843367
+    second: "ru\u0308zgar hali sprite_34"
+  - first:
+      213: -6962583282300379005
+    second: "ru\u0308zgar hali sprite_35"
+  - first:
+      213: -7603563144428625201
+    second: "ru\u0308zgar hali sprite_36"
+  - first:
+      213: 3911395949997725575
+    second: "ru\u0308zgar hali sprite_37"
+  - first:
+      213: 1544720485238627305
+    second: "ru\u0308zgar hali sprite_38"
+  - first:
+      213: 5380156139793104406
+    second: "ru\u0308zgar hali sprite_39"
+  - first:
+      213: 2519293443205382926
+    second: "ru\u0308zgar hali sprite_40"
+  - first:
+      213: -859547367703659524
+    second: "ru\u0308zgar hali sprite_41"
+  - first:
+      213: -4419249694230488805
+    second: "ru\u0308zgar hali sprite_42"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "ru\u0308zgar hali sprite_0"
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 822
+        width: 97
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce36a277988546a80800000000000000
+      internalID: -8474551251371400212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ru\u0308zgar hali sprite_1"
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 822
+        width: 92
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e7ee9e564b2bb1f0800000000000000
+      internalID: -1028180508688848919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ru\u0308zgar hali sprite_2"
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 817
+        width: 106
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24b183c372adc3590800000000000000
+      internalID: -7693034201406760126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ru\u0308zgar hali sprite_3"
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 818
+        width: 120
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93bd6696b04035f50800000000000000
+      internalID: 6868838303729638201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ru\u0308zgar hali sprite_4"
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 820
+        width: 90
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f98902893387a6440800000000000000
+      internalID: 4929884905101367455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ru\u0308zgar hali sprite_5"
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 822
+        width: 71
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f026084e3f83c2700800000000000000
+      internalID: 516850677402591759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ru\u0308zgar hali sprite_6"
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 966
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35e1a002fe4897f20800000000000000
+      internalID: 3420911554534186579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ru\u0308zgar hali sprite_7"
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 822
+        width: 76
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e2c63b23ab968040800000000000000
+      internalID: 4649574790413599456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ru\u0308zgar hali sprite_8"
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 822
+        width: 83
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d88d92b8fd5ddaa60800000000000000
+      internalID: 7687035295080503437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ru\u0308zgar hali sprite_9"
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 820
+        width: 90
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b342c19b0237cbc60800000000000000
+      internalID: 7835264036099597371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ru\u0308zgar hali sprite_10"
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 587
+        width: 109
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5db1dc6f811d1ac0800000000000000
+      internalID: -3882927996019819170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ru\u0308zgar hali sprite_11"
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 587
+        width: 97
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 809cfbd187b50a130800000000000000
+      internalID: 3575958675585485064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ru\u0308zgar hali sprite_12"
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 587
+        width: 139
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8839fd9c33806f5d0800000000000000
+      internalID: -3029224680836852856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ru\u0308zgar hali sprite_13"
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 588
+        width: 122
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3569cbb5ae6c04520800000000000000
+      internalID: 2684364087776548435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ru\u0308zgar hali sprite_14"
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 587
+        width: 75
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 323b1bbb530587bb0800000000000000
+      internalID: -4938108799699274973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ru\u0308zgar hali sprite_15"
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 596
+        width: 80
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d891a8769faa6d60800000000000000
+      internalID: 7884307158469286103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ru\u0308zgar hali sprite_16"
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 630
+        width: 113
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3420b919b2d525960800000000000000
+      internalID: 7589230763780538947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ru\u0308zgar hali sprite_17"
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 587
+        width: 75
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4d94b520eeb47890800000000000000
+      internalID: -7461128812731523766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ru\u0308zgar hali sprite_18"
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 323
+        width: 101
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6bff9f2eb149fc40800000000000000
+      internalID: 5546536701182081901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ru\u0308zgar hali sprite_19"
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 323
+        width: 122
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0600d2c831702f60800000000000000
+      internalID: 8007524626065262090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ru\u0308zgar hali sprite_20"
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 318
+        width: 139
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e2303e161f5f3810800000000000000
+      internalID: 1747219729043436258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ru\u0308zgar hali sprite_21"
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 318
+        width: 102
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0f46d56d848daac0800000000000000
+      internalID: -3842269164243366134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ru\u0308zgar hali sprite_22"
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 447
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26a63c097f8db2380800000000000000
+      internalID: -8994857272945186206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ru\u0308zgar hali sprite_23"
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 433
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8807795acd9176f0800000000000000
+      internalID: -688595775601047409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ru\u0308zgar hali sprite_24"
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 323
+        width: 105
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af708a07b27a82d80800000000000000
+      internalID: -8275180510277793798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ru\u0308zgar hali sprite_25"
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 323
+        width: 105
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a9b59f203f5bd160800000000000000
+      internalID: 7051334302140053921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ru\u0308zgar hali sprite_26"
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 323
+        width: 122
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c44b5401021d53a0800000000000000
+      internalID: -6675159277115849527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ru\u0308zgar hali sprite_27"
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 323
+        width: 109
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f79ae371f9463ead0800000000000000
+      internalID: -2674183119275382401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ru\u0308zgar hali sprite_28"
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 384
+        width: 51
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5222f41b7082173e0800000000000000
+      internalID: -2057819541226970587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ru\u0308zgar hali sprite_29"
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 410
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2cabad6c132d1a00800000000000000
+      internalID: 728777319709912107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ru\u0308zgar hali sprite_30"
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 144
+        width: 113
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e527d3dea87530ed0800000000000000
+      internalID: -2449017518162087330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ru\u0308zgar hali sprite_31"
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 143
+        width: 111
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 007ee30d2694f6a60800000000000000
+      internalID: 7669429379184649984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ru\u0308zgar hali sprite_32"
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 143
+        width: 122
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c88f319977e7999d0800000000000000
+      internalID: -2767041443908028276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ru\u0308zgar hali sprite_33"
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 109
+        width: 188
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c649539b340de1300800000000000000
+      internalID: 224846020703786092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ru\u0308zgar hali sprite_34"
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 138
+        width: 118
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91e82d4aaa1b1d9d0800000000000000
+      internalID: -2751222550878843367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ru\u0308zgar hali sprite_35"
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 135
+        width: 126
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 380a963e46fef5f90800000000000000
+      internalID: -6962583282300379005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ru\u0308zgar hali sprite_36"
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 144
+        width: 123
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc264150b97ba7690800000000000000
+      internalID: -7603563144428625201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ru\u0308zgar hali sprite_37"
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 142
+        width: 120
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 787148f94e1184630800000000000000
+      internalID: 3911395949997725575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ru\u0308zgar hali sprite_38"
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 7
+        width: 89
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ebdae7d813ff6510800000000000000
+      internalID: 1544720485238627305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ru\u0308zgar hali sprite_39"
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 126
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61e318cf0872aaa40800000000000000
+      internalID: 5380156139793104406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ru\u0308zgar hali sprite_40"
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 7
+        width: 93
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e034a3fe90456f220800000000000000
+      internalID: 2519293443205382926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ru\u0308zgar hali sprite_41"
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 112
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfbb66029364214f0800000000000000
+      internalID: -859547367703659524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ru\u0308zgar hali sprite_42"
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 7
+        width: 187
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1953a931dbaba2c0800000000000000
+      internalID: -4419249694230488805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "ru\u0308zgar hali sprite_0": -8474551251371400212
+      "ru\u0308zgar hali sprite_1": -1028180508688848919
+      "ru\u0308zgar hali sprite_10": -3882927996019819170
+      "ru\u0308zgar hali sprite_11": 3575958675585485064
+      "ru\u0308zgar hali sprite_12": -3029224680836852856
+      "ru\u0308zgar hali sprite_13": 2684364087776548435
+      "ru\u0308zgar hali sprite_14": -4938108799699274973
+      "ru\u0308zgar hali sprite_15": 7884307158469286103
+      "ru\u0308zgar hali sprite_16": 7589230763780538947
+      "ru\u0308zgar hali sprite_17": -7461128812731523766
+      "ru\u0308zgar hali sprite_18": 5546536701182081901
+      "ru\u0308zgar hali sprite_19": 8007524626065262090
+      "ru\u0308zgar hali sprite_2": -7693034201406760126
+      "ru\u0308zgar hali sprite_20": 1747219729043436258
+      "ru\u0308zgar hali sprite_21": -3842269164243366134
+      "ru\u0308zgar hali sprite_22": -8994857272945186206
+      "ru\u0308zgar hali sprite_23": -688595775601047409
+      "ru\u0308zgar hali sprite_24": -8275180510277793798
+      "ru\u0308zgar hali sprite_25": 7051334302140053921
+      "ru\u0308zgar hali sprite_26": -6675159277115849527
+      "ru\u0308zgar hali sprite_27": -2674183119275382401
+      "ru\u0308zgar hali sprite_28": -2057819541226970587
+      "ru\u0308zgar hali sprite_29": 728777319709912107
+      "ru\u0308zgar hali sprite_3": 6868838303729638201
+      "ru\u0308zgar hali sprite_30": -2449017518162087330
+      "ru\u0308zgar hali sprite_31": 7669429379184649984
+      "ru\u0308zgar hali sprite_32": -2767041443908028276
+      "ru\u0308zgar hali sprite_33": 224846020703786092
+      "ru\u0308zgar hali sprite_34": -2751222550878843367
+      "ru\u0308zgar hali sprite_35": -6962583282300379005
+      "ru\u0308zgar hali sprite_36": -7603563144428625201
+      "ru\u0308zgar hali sprite_37": 3911395949997725575
+      "ru\u0308zgar hali sprite_38": 1544720485238627305
+      "ru\u0308zgar hali sprite_39": 5380156139793104406
+      "ru\u0308zgar hali sprite_4": 4929884905101367455
+      "ru\u0308zgar hali sprite_40": 2519293443205382926
+      "ru\u0308zgar hali sprite_41": -859547367703659524
+      "ru\u0308zgar hali sprite_42": -4419249694230488805
+      "ru\u0308zgar hali sprite_5": 516850677402591759
+      "ru\u0308zgar hali sprite_6": 3420911554534186579
+      "ru\u0308zgar hali sprite_7": 4649574790413599456
+      "ru\u0308zgar hali sprite_8": 7687035295080503437
+      "ru\u0308zgar hali sprite_9": 7835264036099597371
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

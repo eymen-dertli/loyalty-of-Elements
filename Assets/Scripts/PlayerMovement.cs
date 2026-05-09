@@ -1,17 +1,26 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 5f;
 
     private Rigidbody2D rb;
+    private BeatEmUpStageDirector stageDirector;
     private float moveInput;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        stageDirector = BeatEmUpStageDirector.Instance;
+    }
+
+    private void Start()
+    {
+        if (stageDirector == null)
+        {
+            stageDirector = BeatEmUpStageDirector.Instance;
+        }
     }
 
     public void OnMove(InputAction.CallbackContext context)
@@ -21,7 +30,19 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
+        float horizontalVelocity = moveInput * moveSpeed;
+
+        if (stageDirector != null)
+        {
+            horizontalVelocity = stageDirector.FilterHorizontalVelocity(rb.position.x, horizontalVelocity);
+        }
+
+        rb.linearVelocity = new Vector2(horizontalVelocity, rb.linearVelocity.y);
+
+        if (stageDirector != null)
+        {
+            rb.position = stageDirector.ClampPlayerPosition(rb.position);
+        }
     }
 
     private void Update()
