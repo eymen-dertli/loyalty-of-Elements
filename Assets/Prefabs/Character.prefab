@@ -11,6 +11,10 @@ GameObject:
   - component: {fileID: 2260215567280030784}
   - component: {fileID: 9165888040743158363}
   - component: {fileID: 6873166960236757383}
+  - component: {fileID: 7434128673849205621}
+  - component: {fileID: 5964120583907782147}
+  - component: {fileID: 2859186236441940721}
+  - component: {fileID: 3951738430696518042}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -114,3 +118,97 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7434128673849205621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8676905630929598246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bbba1a165f14b8489bc09051f996d3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fallbackAttackDuration: 0.3
+  punchDamage: 10
+  kickDamage: 15
+  attackRange: 32
+  attackBoxSize: {x: 34, y: 38}
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 64
+  idleStateName: PlayerIdle
+  punchStateName: PlayerAttackPunch
+  kickStateName: PlayerAttackKick
+--- !u!114 &5964120583907782147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8676905630929598246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fd50c96297f4de44a1f556dd894b80c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 100
+  runMultiplier: 1.6
+  jumpVelocity: 85
+  gravity: 220
+  idleStateName: PlayerIdle
+  walkStateName: PlayerWalk
+  runStateName: PlayerRun
+  jumpStateName: PlayerJump
+--- !u!114 &2859186236441940721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8676905630929598246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b95556a29f5e4828b18036f275f87269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  healthChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3951738430696518042}
+        m_TargetAssemblyTypeName: SegmentedHealthBar, Assembly-CSharp
+        m_MethodName: SetHealth
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  died:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &3951738430696518042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8676905630929598246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4a28d64dc3741fe87968ff3f738eb1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 2859186236441940721}
+  segmentCount: 7
+  localOffset: {x: 0, y: 1.1, z: 0}
+  segmentSize: {x: 0.12, y: 0.04}
+  segmentSpacing: 0.02
+  filledColor: {r: 0.9, g: 0.05, b: 0.05, a: 1}
+  emptyColor: {r: 0.15, g: 0.15, b: 0.15, a: 1}
+  sortingOrder: 20

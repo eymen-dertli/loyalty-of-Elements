@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 82316827976174031}
   - component: {fileID: 6469322168566864891}
   - component: {fileID: 2373336179879837069}
+  - component: {fileID: 5619823746501182044}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: Untagged
@@ -114,3 +115,39 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5619823746501182044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2827843396974141033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ac040447afe401a9edba3d33f4f3091, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  moveSpeed: 35
+  stopDistance: 12
+  meleeAttackDistance: 14
+  rangeAttackDistance: 55
+  attackCooldown: 1.1
+  attackDamage: 15
+  canUseRangeAttack: 1
+  maxHealth: 50
+  destroyOnDeath: 1
+  destroyDelay: 1.5
+  isWalkingParameter: isWalking
+  meleeAttackParameter: meleeAttack
+  rangeAttackParameter: rangeAttack
+  isDeadParameter: isDead
+  meleeAttackEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  rangeAttackEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  deathEvent:
+    m_PersistentCalls:
+      m_Calls: []

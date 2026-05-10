@@ -14,10 +14,11 @@ public class EnemyCombatStateController : MonoBehaviour
     [SerializeField] private float meleeAttackDistance = 14f;
     [SerializeField] private float rangeAttackDistance = 55f;
     [SerializeField] private float attackCooldown = 1.1f;
+    [SerializeField] private int attackDamage = 15;
     [SerializeField] private bool canUseRangeAttack = true;
 
     [Header("Health")]
-    [SerializeField] private int maxHealth = 3;
+    [SerializeField] private int maxHealth = 50;
     [SerializeField] private bool destroyOnDeath = false;
     [SerializeField] private float destroyDelay = 1.5f;
 
@@ -42,6 +43,26 @@ public class EnemyCombatStateController : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        if (rb == null)
+        {
+            rb = gameObject.AddComponent<Rigidbody2D>();
+        }
+
+        rb.bodyType = RigidbodyType2D.Dynamic;
+        rb.gravityScale = 0f;
+        rb.freezeRotation = true;
+        rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
+        rb.interpolation = RigidbodyInterpolation2D.Interpolate;
+
+        BoxCollider2D bodyCollider = GetComponent<BoxCollider2D>();
+        if (bodyCollider == null)
+        {
+            bodyCollider = gameObject.AddComponent<BoxCollider2D>();
+        }
+
+        bodyCollider.isTrigger = false;
+        bodyCollider.size = new Vector2(0.95f, 1.35f);
+        bodyCollider.offset = new Vector2(0f, -0.08f);
         currentHealth = maxHealth;
 
         if (target == null)
@@ -55,6 +76,15 @@ public class EnemyCombatStateController : MonoBehaviour
             if (player != null)
             {
                 target = player.transform;
+            }
+        }
+
+        if (target == null)
+        {
+            CharacterHealth characterHealth = FindFirstObjectByType<CharacterHealth>();
+            if (characterHealth != null)
+            {
+                target = characterHealth.transform;
             }
         }
     }
@@ -161,6 +191,7 @@ public class EnemyCombatStateController : MonoBehaviour
 
         nextAttackTime = Time.time + attackCooldown;
         SetTrigger(meleeAttackParameter);
+        DamageTarget();
         meleeAttackEvent?.Invoke(target.gameObject);
     }
 
@@ -173,12 +204,27 @@ public class EnemyCombatStateController : MonoBehaviour
 
         nextAttackTime = Time.time + attackCooldown;
         SetTrigger(rangeAttackParameter);
+        DamageTarget();
         rangeAttackEvent?.Invoke(target.gameObject);
     }
 
     private bool CanAttack()
     {
         return target != null && Time.time >= nextAttackTime;
+    }
+
+    private void DamageTarget()
+    {
+        if (target == null)
+        {
+            return;
+        }
+
+        CharacterHealth health = target.GetComponent<CharacterHealth>();
+        if (health != null)
+        {
+            health.TakeDamage(attackDamage);
+        }
     }
 
     private void FlipToward(float directionX)

@@ -116,7 +116,7 @@ public class BeatEmUpStageDirector : MonoBehaviour
         activeEnemies.Clear();
 
         AddExistingEnemies(existingEnemies);
-        SpawnEnemies(enemyPrefabs, spawnCount);
+        SpawnEnemies(enemyPrefabs, spawnCount - activeEnemies.Count);
 
         if (activeEnemies.Count == 0)
         {

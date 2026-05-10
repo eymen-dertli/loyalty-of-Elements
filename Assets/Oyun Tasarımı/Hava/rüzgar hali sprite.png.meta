@@ -462,8 +462,8 @@ TextureImporter:
       name: "ru\u0308zgar hali sprite_11"
       rect:
         serializedVersion: 2
-        x: 152
-        y: 587
+        x: 149
+        y: 585
         width: 97
         height: 153
       alignment: 0
@@ -484,9 +484,9 @@ TextureImporter:
       name: "ru\u0308zgar hali sprite_12"
       rect:
         serializedVersion: 2
-        x: 238
+        x: 247
         y: 587
-        width: 139
+        width: 132
         height: 149
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -640,7 +640,7 @@ TextureImporter:
         serializedVersion: 2
         x: 135
         y: 323
-        width: 122
+        width: 117
         height: 144
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -660,9 +660,9 @@ TextureImporter:
       name: "ru\u0308zgar hali sprite_20"
       rect:
         serializedVersion: 2
-        x: 251
+        x: 256
         y: 318
-        width: 139
+        width: 129
         height: 144
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
