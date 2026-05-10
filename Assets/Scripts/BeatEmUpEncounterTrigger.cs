@@ -4,9 +4,11 @@ using UnityEngine;
 [RequireComponent(typeof(BoxCollider2D))]
 public class BeatEmUpEncounterTrigger : MonoBehaviour
 {
+    private const int EnemiesPerRound = 4;
+
     [SerializeField] private BeatEmUpStageDirector stageDirector;
     [SerializeField] private bool finalEncounter = false;
-    [SerializeField] private int spawnCount = 4;
+    [SerializeField, Min(1)] private int spawnCount = EnemiesPerRound;
     [SerializeField] private List<GameObject> existingEnemies = new List<GameObject>();
     [SerializeField] private List<GameObject> enemyPrefabs = new List<GameObject>();
 
@@ -14,6 +16,8 @@ public class BeatEmUpEncounterTrigger : MonoBehaviour
 
     private void Awake()
     {
+        spawnCount = EnemiesPerRound;
+
         BoxCollider2D triggerCollider = GetComponent<BoxCollider2D>();
         triggerCollider.isTrigger = true;
 
@@ -21,6 +25,11 @@ public class BeatEmUpEncounterTrigger : MonoBehaviour
         {
             stageDirector = BeatEmUpStageDirector.Instance;
         }
+    }
+
+    private void OnValidate()
+    {
+        spawnCount = EnemiesPerRound;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
