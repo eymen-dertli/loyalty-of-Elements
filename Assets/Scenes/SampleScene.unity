@@ -244,7 +244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.020754695, b: 0.020754695, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2393,15 +2393,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5964120583907782147, guid: cbde17abd7946ad4b944c33febafd350, type: 3}
       propertyPath: gravity
-      value: 210
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 5964120583907782147, guid: cbde17abd7946ad4b944c33febafd350, type: 3}
       propertyPath: moveSpeed
-      value: 450
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 5964120583907782147, guid: cbde17abd7946ad4b944c33febafd350, type: 3}
       propertyPath: jumpVelocity
-      value: 145
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 8676905630929598246, guid: cbde17abd7946ad4b944c33febafd350, type: 3}
       propertyPath: m_Name
