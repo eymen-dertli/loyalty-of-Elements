@@ -1,0 +1,798 @@
+fileFormatVersion: 2
+guid: 787e15300fb6a67439305429ce812ac9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5836366027954817520
+    second: "sald\u0131r\u0131 2_0"
+  - first:
+      213: 233294695538563615
+    second: "sald\u0131r\u0131 2_1"
+  - first:
+      213: -6703405811698176535
+    second: "sald\u0131r\u0131 2_2"
+  - first:
+      213: -3399458949984141853
+    second: "sald\u0131r\u0131 2_3"
+  - first:
+      213: -4989498407919408815
+    second: "sald\u0131r\u0131 2_4"
+  - first:
+      213: -6882465169356536650
+    second: "sald\u0131r\u0131 2_5"
+  - first:
+      213: 2437038272150151851
+    second: "sald\u0131r\u0131 2_6"
+  - first:
+      213: 2214728183741052715
+    second: "sald\u0131r\u0131 2_7"
+  - first:
+      213: -8325935826782260272
+    second: "sald\u0131r\u0131 2_8"
+  - first:
+      213: -4549618626378958509
+    second: "sald\u0131r\u0131 2_9"
+  - first:
+      213: 7361278937613025386
+    second: "sald\u0131r\u0131 2_10"
+  - first:
+      213: -778674233174116814
+    second: "sald\u0131r\u0131 2_11"
+  - first:
+      213: -5261384105624619696
+    second: "sald\u0131r\u0131 2_12"
+  - first:
+      213: 9183911682003486319
+    second: "sald\u0131r\u0131 2_13"
+  - first:
+      213: 436862504454666388
+    second: "sald\u0131r\u0131 2_14"
+  - first:
+      213: 4349786273744234674
+    second: "sald\u0131r\u0131 2_15"
+  - first:
+      213: -7296002859404222885
+    second: "sald\u0131r\u0131 2_16"
+  - first:
+      213: -2759997291803330016
+    second: "sald\u0131r\u0131 2_17"
+  - first:
+      213: -2559619646206657320
+    second: "sald\u0131r\u0131 2_18"
+  - first:
+      213: 7897937061936893442
+    second: "sald\u0131r\u0131 2_19"
+  - first:
+      213: -4574755828136340231
+    second: "sald\u0131r\u0131 2_20"
+  - first:
+      213: 3694568032535327804
+    second: "sald\u0131r\u0131 2_21"
+  - first:
+      213: -8919823040864613725
+    second: "sald\u0131r\u0131 2_22"
+  - first:
+      213: 8812469747270620765
+    second: "sald\u0131r\u0131 2_23"
+  - first:
+      213: 8647002911264945593
+    second: "sald\u0131r\u0131 2_24"
+  - first:
+      213: -7448229114768571293
+    second: "sald\u0131r\u0131 2_25"
+  - first:
+      213: -6421842818389729018
+    second: "sald\u0131r\u0131 2_26"
+  - first:
+      213: 454314303856539600
+    second: "sald\u0131r\u0131 2_27"
+  - first:
+      213: -4810456453308338577
+    second: "sald\u0131r\u0131 2_28"
+  - first:
+      213: -7135219570373891401
+    second: "sald\u0131r\u0131 2_29"
+  - first:
+      213: 6350872872815540630
+    second: "sald\u0131r\u0131 2_30"
+  - first:
+      213: 5323126299516139525
+    second: "sald\u0131r\u0131 2_31"
+  - first:
+      213: 1375225385327777801
+    second: "sald\u0131r\u0131 2_32"
+  - first:
+      213: 2061009538905162918
+    second: "sald\u0131r\u0131 2_33"
+  - first:
+      213: 3993572800391174848
+    second: "sald\u0131r\u0131 2_34"
+  - first:
+      213: 1152376317521739554
+    second: "sald\u0131r\u0131 2_35"
+  - first:
+      213: 702996153242182354
+    second: "sald\u0131r\u0131 2_36"
+  - first:
+      213: -8018511117354366470
+    second: "sald\u0131r\u0131 2_37"
+  - first:
+      213: -1299007618431792785
+    second: "sald\u0131r\u0131 2_38"
+  - first:
+      213: -633618705819767008
+    second: "sald\u0131r\u0131 2_39"
+  - first:
+      213: -6665477456030297856
+    second: "sald\u0131r\u0131 2_40"
+  - first:
+      213: 8035577531992356160
+    second: "sald\u0131r\u0131 2_41"
+  - first:
+      213: 3097230277892848843
+    second: "sald\u0131r\u0131 2_42"
+  - first:
+      213: 7578047747722236340
+    second: "sald\u0131r\u0131 2_43"
+  - first:
+      213: -8758115366611223639
+    second: "sald\u0131r\u0131 2_44"
+  - first:
+      213: 3538132630091148196
+    second: "sald\u0131r\u0131 2_45"
+  - first:
+      213: 3654000018061355496
+    second: "sald\u0131r\u0131 2_46"
+  - first:
+      213: 6392069313856601114
+    second: "sald\u0131r\u0131 2_47"
+  - first:
+      213: 4035964456635054442
+    second: "sald\u0131r\u0131 2_48"
+  - first:
+      213: -3271608084355079665
+    second: "sald\u0131r\u0131 2_49"
+  - first:
+      213: -2591959298188185491
+    second: "sald\u0131r\u0131 2_50"
+  - first:
+      213: -6789657610365673574
+    second: "sald\u0131r\u0131 2_51"
+  - first:
+      213: 2429028155143311893
+    second: "sald\u0131r\u0131 2_52"
+  - first:
+      213: 6999824098632020763
+    second: "sald\u0131r\u0131 2_53"
+  - first:
+      213: 733951783473095711
+    second: "sald\u0131r\u0131 2_54"
+  - first:
+      213: -6842389678594443876
+    second: "sald\u0131r\u0131 2_55"
+  - first:
+      213: 9014290025218739093
+    second: "sald\u0131r\u0131 2_56"
+  - first:
+      213: 8335531223916535342
+    second: "sald\u0131r\u0131 2_57"
+  - first:
+      213: 3739920149166220128
+    second: "sald\u0131r\u0131 2_58"
+  - first:
+      213: -8552378418855601559
+    second: "sald\u0131r\u0131 2_59"
+  - first:
+      213: -1323625749650314936
+    second: "sald\u0131r\u0131 2_60"
+  - first:
+      213: -4206609775733237370
+    second: "sald\u0131r\u0131 2_61"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "sald\u0131r\u0131 2_3"
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 794
+        width: 227
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ed3ca99812b2d0d0800000000000000
+      internalID: -3399458949984141853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "sald\u0131r\u0131 2_6"
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 830
+        width: 115
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba2aa83856912d120800000000000000
+      internalID: 2437038272150151851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "sald\u0131r\u0131 2_8"
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 799
+        width: 227
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d3f1fd6a75547c80800000000000000
+      internalID: -8325935826782260272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "sald\u0131r\u0131 2_9"
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 846
+        width: 59
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3597e27d6f18cd0c0800000000000000
+      internalID: -4549618626378958509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "sald\u0131r\u0131 2_16"
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 0
+        width: 153
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5e1af42e046fba90800000000000000
+      internalID: -7296002859404222885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "sald\u0131r\u0131 2_17"
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 773
+        width: 244
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02ab501161582b9d0800000000000000
+      internalID: -2759997291803330016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "sald\u0131r\u0131 2_20"
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 574
+        width: 109
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f419c9ffc33380c0800000000000000
+      internalID: -4574755828136340231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "sald\u0131r\u0131 2_24"
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 590
+        width: 91
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b537b18553500870800000000000000
+      internalID: 8647002911264945593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "sald\u0131r\u0131 2_25"
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 584
+        width: 99
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3644f70251392a890800000000000000
+      internalID: -7448229114768571293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "sald\u0131r\u0131 2_31"
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 572
+        width: 123
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 508f2319a2b8fd940800000000000000
+      internalID: 5323126299516139525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "sald\u0131r\u0131 2_33"
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 569
+        width: 139
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a44225814d2a9c10800000000000000
+      internalID: 2061009538905162918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "sald\u0131r\u0131 2_35"
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 568
+        width: 149
+        height: 167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22fb47db7201eff00800000000000000
+      internalID: 1152376317521739554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "sald\u0131r\u0131 2_46"
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 149
+        width: 149
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e961dd18ad95b230800000000000000
+      internalID: 3654000018061355496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "sald\u0131r\u0131 2_48"
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 141
+        width: 154
+        height: 149
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a69b5d33a40a20830800000000000000
+      internalID: 4035964456635054442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "sald\u0131r\u0131 2_49"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 139
+        width: 130
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0228bfe7c9e892d0800000000000000
+      internalID: -3271608084355079665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "sald\u0131r\u0131 2_51"
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 153
+        width: 99
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9f50a3606a46c1a0800000000000000
+      internalID: -6789657610365673574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "sald\u0131r\u0131 2_56"
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 0
+        width: 290
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59b8287a401391d70800000000000000
+      internalID: 9014290025218739093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "sald\u0131r\u0131 2_57"
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 0
+        width: 210
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2ed8bf0c71cda370800000000000000
+      internalID: 8335531223916535342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "sald\u0131r\u0131 2_60"
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 0
+        width: 222
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8496880c46981ade0800000000000000
+      internalID: -1323625749650314936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e2fc51ceb2d1acd45832cc4bf98ade83
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      "sald\u0131r\u0131 2_0": 5836366027954817520
+      "sald\u0131r\u0131 2_1": 233294695538563615
+      "sald\u0131r\u0131 2_10": 7361278937613025386
+      "sald\u0131r\u0131 2_11": -778674233174116814
+      "sald\u0131r\u0131 2_12": -5261384105624619696
+      "sald\u0131r\u0131 2_13": 9183911682003486319
+      "sald\u0131r\u0131 2_14": 436862504454666388
+      "sald\u0131r\u0131 2_15": 4349786273744234674
+      "sald\u0131r\u0131 2_16": -7296002859404222885
+      "sald\u0131r\u0131 2_17": -2759997291803330016
+      "sald\u0131r\u0131 2_18": -2559619646206657320
+      "sald\u0131r\u0131 2_19": 7897937061936893442
+      "sald\u0131r\u0131 2_2": -6703405811698176535
+      "sald\u0131r\u0131 2_20": -4574755828136340231
+      "sald\u0131r\u0131 2_21": 3694568032535327804
+      "sald\u0131r\u0131 2_22": -8919823040864613725
+      "sald\u0131r\u0131 2_23": 8812469747270620765
+      "sald\u0131r\u0131 2_24": 8647002911264945593
+      "sald\u0131r\u0131 2_25": -7448229114768571293
+      "sald\u0131r\u0131 2_26": -6421842818389729018
+      "sald\u0131r\u0131 2_27": 454314303856539600
+      "sald\u0131r\u0131 2_28": -4810456453308338577
+      "sald\u0131r\u0131 2_29": -7135219570373891401
+      "sald\u0131r\u0131 2_3": -3399458949984141853
+      "sald\u0131r\u0131 2_30": 6350872872815540630
+      "sald\u0131r\u0131 2_31": 5323126299516139525
+      "sald\u0131r\u0131 2_32": 1375225385327777801
+      "sald\u0131r\u0131 2_33": 2061009538905162918
+      "sald\u0131r\u0131 2_34": 3993572800391174848
+      "sald\u0131r\u0131 2_35": 1152376317521739554
+      "sald\u0131r\u0131 2_36": 702996153242182354
+      "sald\u0131r\u0131 2_37": -8018511117354366470
+      "sald\u0131r\u0131 2_38": -1299007618431792785
+      "sald\u0131r\u0131 2_39": -633618705819767008
+      "sald\u0131r\u0131 2_4": -4989498407919408815
+      "sald\u0131r\u0131 2_40": -6665477456030297856
+      "sald\u0131r\u0131 2_41": 8035577531992356160
+      "sald\u0131r\u0131 2_42": 3097230277892848843
+      "sald\u0131r\u0131 2_43": 7578047747722236340
+      "sald\u0131r\u0131 2_44": -8758115366611223639
+      "sald\u0131r\u0131 2_45": 3538132630091148196
+      "sald\u0131r\u0131 2_46": 3654000018061355496
+      "sald\u0131r\u0131 2_47": 6392069313856601114
+      "sald\u0131r\u0131 2_48": 4035964456635054442
+      "sald\u0131r\u0131 2_49": -3271608084355079665
+      "sald\u0131r\u0131 2_5": -6882465169356536650
+      "sald\u0131r\u0131 2_50": -2591959298188185491
+      "sald\u0131r\u0131 2_51": -6789657610365673574
+      "sald\u0131r\u0131 2_52": 2429028155143311893
+      "sald\u0131r\u0131 2_53": 6999824098632020763
+      "sald\u0131r\u0131 2_54": 733951783473095711
+      "sald\u0131r\u0131 2_55": -6842389678594443876
+      "sald\u0131r\u0131 2_56": 9014290025218739093
+      "sald\u0131r\u0131 2_57": 8335531223916535342
+      "sald\u0131r\u0131 2_58": 3739920149166220128
+      "sald\u0131r\u0131 2_59": -8552378418855601559
+      "sald\u0131r\u0131 2_6": 2437038272150151851
+      "sald\u0131r\u0131 2_60": -1323625749650314936
+      "sald\u0131r\u0131 2_61": -4206609775733237370
+      "sald\u0131r\u0131 2_7": 2214728183741052715
+      "sald\u0131r\u0131 2_8": -8325935826782260272
+      "sald\u0131r\u0131 2_9": -4549618626378958509
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -14,6 +14,7 @@ public class CharacterKeyboardMovement : MonoBehaviour
 
     private Animator animator;
     private CharacterMouseAttack mouseAttack;
+    private CharacterSpellCaster spellCaster;
     private Rigidbody2D rb;
     private float groundY;
     private float verticalVelocity;
@@ -23,6 +24,7 @@ public class CharacterKeyboardMovement : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         mouseAttack = GetComponent<CharacterMouseAttack>();
+        spellCaster = GetComponent<CharacterSpellCaster>();
         rb = GetComponent<Rigidbody2D>();
         if (rb == null)
         {
@@ -157,6 +159,6 @@ public class CharacterKeyboardMovement : MonoBehaviour
 
     private bool IsAttackPlaying()
     {
-        return mouseAttack != null && mouseAttack.IsAttacking;
+        return (mouseAttack != null && mouseAttack.IsAttacking) || (spellCaster != null && spellCaster.IsCasting);
     }
 }

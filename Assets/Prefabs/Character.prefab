@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5964120583907782147}
   - component: {fileID: 2859186236441940721}
   - component: {fileID: 3951738430696518042}
+  - component: {fileID: 6819374558851042814}
   m_Layer: 7
   m_Name: Character
   m_TagString: Player
@@ -212,3 +213,71 @@ MonoBehaviour:
   filledColor: {r: 0.9, g: 0.05, b: 0.05, a: 1}
   emptyColor: {r: 0.15, g: 0.15, b: 0.15, a: 1}
   sortingOrder: 20
+--- !u!114 &6819374558851042814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8676905630929598246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92f244469b164a5c88427baeaac917f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterAnimator: {fileID: 6873166960236757383}
+  castPoint: {fileID: 0}
+  castOffset: {x: 28, y: 4}
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 64
+  projectileSortingLayer: Player
+  projectileSortingOrder: 50
+  spell1:
+    name: Spell 1
+    projectilePrefab: {fileID: 0}
+    sprite: {fileID: -4549618626378958509, guid: 787e15300fb6a67439305429ce812ac9, type: 3}
+    projectileAnimation: {fileID: 7400000, guid: 239b4bc5ba9fb6240a4c9eadc09cc434, type: 2}
+    characterCastStateName: PlayerAttackWindBall
+    speed: 180
+    lifetime: 2
+    cooldown: 0.35
+    damage: 20
+    scale: 14
+    hitRadius: 1.4
+  spell2:
+    name: Spell 2
+    projectilePrefab: {fileID: 0}
+    sprite: {fileID: -8325935826782260272, guid: 787e15300fb6a67439305429ce812ac9, type: 3}
+    projectileAnimation: {fileID: 7400000, guid: 1b4de98a1c50e344482506e8d47a4611, type: 2}
+    characterCastStateName: PlayerAttackWindBall
+    speed: 150
+    lifetime: 2.2
+    cooldown: 0.35
+    damage: 30
+    scale: 16
+    hitRadius: 1.6
+  spell3:
+    name: Spell 3
+    projectilePrefab: {fileID: 0}
+    sprite: {fileID: -7296002859404222885, guid: 787e15300fb6a67439305429ce812ac9, type: 3}
+    projectileAnimation: {fileID: 7400000, guid: a24155b1d2d1d5049b72052a24cd9c27, type: 2}
+    characterCastStateName: PlayerAttackTornado
+    speed: 130
+    lifetime: 2.4
+    cooldown: 0.45
+    damage: 40
+    scale: 18
+    hitRadius: 1.8
+  ultimate:
+    name: Ulti
+    projectilePrefab: {fileID: 0}
+    sprite: {fileID: 9014290025218739093, guid: 787e15300fb6a67439305429ce812ac9, type: 3}
+    projectileAnimation: {fileID: 7400000, guid: 62ad6b9cd5496d647a796be660933418, type: 2}
+    characterCastStateName: PlayerAttackTornado
+    speed: 110
+    lifetime: 3
+    cooldown: 0.8
+    damage: 80
+    scale: 24
+    hitRadius: 2.4

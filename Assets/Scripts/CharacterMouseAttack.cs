@@ -14,6 +14,7 @@ public class CharacterMouseAttack : MonoBehaviour
     [SerializeField] private string kickStateName = "PlayerAttackKick";
 
     private Animator animator;
+    private CharacterSpellCaster spellCaster;
     private readonly Collider2D[] hitResults = new Collider2D[8];
     private float attackEndTime;
 
@@ -22,6 +23,7 @@ public class CharacterMouseAttack : MonoBehaviour
     private void Awake()
     {
         animator = GetComponent<Animator>();
+        spellCaster = GetComponent<CharacterSpellCaster>();
 
         if (enemyLayers == 0)
         {
@@ -44,7 +46,7 @@ public class CharacterMouseAttack : MonoBehaviour
 
         Mouse mouse = Mouse.current;
 
-        if (mouse == null)
+        if (mouse == null || (spellCaster != null && spellCaster.IsCasting))
         {
             return;
         }
