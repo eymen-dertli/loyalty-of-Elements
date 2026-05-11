@@ -83,6 +83,10 @@ public class CharacterKeyboardMovement : MonoBehaviour
         float currentMoveSpeed = isRunning ? moveSpeed * runMultiplier : moveSpeed;
         position.x += horizontalInput * currentMoveSpeed * Time.deltaTime;
         position.y += verticalVelocity * Time.deltaTime;
+        if (BeatEmUpStageDirector.Instance != null)
+        {
+            position = BeatEmUpStageDirector.Instance.ClampPlayerPosition(position);
+        }
 
         if (position.y <= groundY)
         {

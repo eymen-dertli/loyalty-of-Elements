@@ -77,14 +77,19 @@ public class SimpleBeatEmUpEnemyAI : MonoBehaviour
             return;
         }
 
-        Vector2 velocity = direction.normalized * moveSpeed;
+        Vector2 nextPosition = (Vector2)transform.position + direction.normalized * moveSpeed * Time.fixedDeltaTime;
+        if (BeatEmUpStageDirector.Instance != null)
+        {
+            nextPosition = BeatEmUpStageDirector.Instance.ClampCombatantPosition(nextPosition);
+        }
+
         if (rb != null)
         {
-            rb.linearVelocity = velocity;
+            rb.MovePosition(nextPosition);
         }
         else
         {
-            transform.position += (Vector3)(velocity * Time.fixedDeltaTime);
+            transform.position = nextPosition;
         }
 
         FlipToward(direction.x);
@@ -118,6 +123,11 @@ public class SimpleBeatEmUpEnemyAI : MonoBehaviour
         }
 
         CharacterHealth health = target.GetComponent<CharacterHealth>();
+        if (health == null)
+        {
+            health = target.GetComponentInParent<CharacterHealth>();
+        }
+
         if (health != null)
         {
             health.TakeDamage(attackDamage);

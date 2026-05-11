@@ -609,6 +609,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04945c554d40bd34fbdaaf12d114514e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenu
+  musicClip: {fileID: 8300000, guid: 808c50cb64a4a514280f4fa68fe9cb6f, type: 3}
+  defaultMusicVolume: 0.7
+  useGeneratedFallbackMusic: 1
+  menuCanvas: {fileID: 1832370259}
+  settingsPanel: {fileID: 0}
+  settingsButton: {fileID: 0}
+  closeSettingsButton: {fileID: 0}
+  musicToggle: {fileID: 0}
+  musicVolumeSlider: {fileID: 0}
 --- !u!4 &669985839
 Transform:
   m_ObjectHideFlags: 0
