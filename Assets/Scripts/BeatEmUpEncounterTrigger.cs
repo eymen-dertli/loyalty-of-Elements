@@ -8,6 +8,7 @@ public class BeatEmUpEncounterTrigger : MonoBehaviour
 
     [SerializeField] private BeatEmUpStageDirector stageDirector;
     [SerializeField] private bool finalEncounter = false;
+    [SerializeField] private bool startOnSceneLoad = true;
     [SerializeField, Min(1)] private int spawnCount = EnemiesPerRound;
     [SerializeField] private List<GameObject> existingEnemies = new List<GameObject>();
     [SerializeField] private List<GameObject> enemyPrefabs = new List<GameObject>();
@@ -27,6 +28,14 @@ public class BeatEmUpEncounterTrigger : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        if (startOnSceneLoad)
+        {
+            StartEncounter();
+        }
+    }
+
     private void OnValidate()
     {
         spawnCount = EnemiesPerRound;
@@ -35,6 +44,30 @@ public class BeatEmUpEncounterTrigger : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (hasTriggered || !IsPlayer(other))
+        {
+            return;
+        }
+
+        StartEncounter();
+    }
+
+    private bool IsPlayer(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            return true;
+        }
+
+        return other.name == "Player"
+            || other.name == "Character"
+            || other.GetComponentInParent<PlayerMovement>() != null
+            || other.GetComponentInParent<CharacterKeyboardMovement>() != null
+            || other.GetComponentInParent<CharacterHealth>() != null;
+    }
+
+    private void StartEncounter()
+    {
+        if (hasTriggered)
         {
             return;
         }
@@ -52,15 +85,5 @@ public class BeatEmUpEncounterTrigger : MonoBehaviour
 
         hasTriggered = true;
         stageDirector.StartEncounter(existingEnemies, enemyPrefabs, spawnCount, finalEncounter);
-    }
-
-    private bool IsPlayer(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            return true;
-        }
-
-        return other.name == "Player" || other.GetComponent<PlayerMovement>() != null;
     }
 }

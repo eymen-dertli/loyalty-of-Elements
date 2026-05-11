@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
 
 public class BeatEmUpStageDirector : MonoBehaviour
@@ -10,8 +11,12 @@ public class BeatEmUpStageDirector : MonoBehaviour
     [SerializeField] private BeatEmUpCameraFollow cameraFollow;
     [SerializeField] private float horizontalScreenPadding = 2f;
     [SerializeField] private float enemySpawnScreenPadding = 3f;
+    [SerializeField] private float enemySpawnInterval = 10f;
+    [SerializeField] private Vector3 enemyScale = new Vector3(25f, 25f, 25f);
 
     private readonly List<GameObject> activeEnemies = new List<GameObject>();
+    private Coroutine spawnRoutine;
+    private int pendingSpawnCount;
     private bool encounterLocked;
     private bool finalEncounter;
 
@@ -71,7 +76,7 @@ public class BeatEmUpStageDirector : MonoBehaviour
 
         RemoveDefeatedEnemies();
 
-        if (activeEnemies.Count == 0)
+        if (activeEnemies.Count == 0 && pendingSpawnCount == 0)
         {
             if (!finalEncounter)
             {
@@ -105,6 +110,11 @@ public class BeatEmUpStageDirector : MonoBehaviour
         return position;
     }
 
+    public Vector2 ClampCombatantPosition(Vector2 position)
+    {
+        return ClampPlayerPosition(position);
+    }
+
     public void StartEncounter(
         IReadOnlyList<GameObject> existingEnemies,
         IReadOnlyList<GameObject> enemyPrefabs,
@@ -115,10 +125,23 @@ public class BeatEmUpStageDirector : MonoBehaviour
         finalEncounter = isFinalEncounter;
         activeEnemies.Clear();
 
-        AddExistingEnemies(existingEnemies);
-        SpawnEnemies(enemyPrefabs, spawnCount - activeEnemies.Count);
+        if (spawnRoutine != null)
+        {
+            StopCoroutine(spawnRoutine);
+            spawnRoutine = null;
+        }
 
-        if (activeEnemies.Count == 0)
+        AddExistingEnemies(existingEnemies);
+        ArrangeEnemiesAroundPlayer();
+
+        int enemiesToSpawn = Mathf.Max(0, spawnCount - activeEnemies.Count);
+        pendingSpawnCount = enemiesToSpawn;
+        if (enemiesToSpawn > 0)
+        {
+            spawnRoutine = StartCoroutine(SpawnEnemiesOverTime(enemyPrefabs, enemiesToSpawn, activeEnemies.Count > 0));
+        }
+
+        if (activeEnemies.Count == 0 && pendingSpawnCount == 0)
         {
             EndEncounter();
             return;
@@ -133,6 +156,13 @@ public class BeatEmUpStageDirector : MonoBehaviour
     private void EndEncounter()
     {
         encounterLocked = false;
+        pendingSpawnCount = 0;
+
+        if (spawnRoutine != null)
+        {
+            StopCoroutine(spawnRoutine);
+            spawnRoutine = null;
+        }
 
         if (cameraFollow != null)
         {
@@ -151,39 +181,108 @@ public class BeatEmUpStageDirector : MonoBehaviour
         {
             if (existingEnemies[i] != null && existingEnemies[i].activeInHierarchy)
             {
+                PrepareEnemy(existingEnemies[i], i);
                 activeEnemies.Add(existingEnemies[i]);
             }
         }
     }
 
-    private void SpawnEnemies(IReadOnlyList<GameObject> enemyPrefabs, int spawnCount)
+    private IEnumerator SpawnEnemiesOverTime(IReadOnlyList<GameObject> enemyPrefabs, int spawnCount, bool delayBeforeFirstSpawn)
     {
         if (enemyPrefabs == null || enemyPrefabs.Count == 0 || spawnCount <= 0)
+        {
+            pendingSpawnCount = 0;
+            yield break;
+        }
+
+        for (int i = 0; i < spawnCount; i++)
+        {
+            if (i > 0 || delayBeforeFirstSpawn)
+            {
+                yield return new WaitForSeconds(enemySpawnInterval);
+            }
+
+            GameObject prefab = enemyPrefabs[i % enemyPrefabs.Count];
+            if (prefab == null)
+            {
+                pendingSpawnCount--;
+                continue;
+            }
+
+            int enemyIndex = activeEnemies.Count + i;
+            Vector3 spawnPosition = GetSpawnPosition(enemyIndex);
+            GameObject enemy = Instantiate(prefab, spawnPosition, Quaternion.identity);
+            PrepareEnemy(enemy, enemyIndex);
+            activeEnemies.Add(enemy);
+            pendingSpawnCount--;
+        }
+
+        spawnRoutine = null;
+    }
+
+    private void ArrangeEnemiesAroundPlayer()
+    {
+        if (activeEnemies.Count == 0)
         {
             return;
         }
 
-        Vector2 cameraLimits = GetCameraHorizontalLimits(0f);
+        Vector2 cameraLimits = GetCameraHorizontalLimits();
+        Vector3 center = player != null ? player.position : transform.position;
 
-        for (int i = 0; i < spawnCount; i++)
+        for (int i = 0; i < activeEnemies.Count; i++)
         {
-            GameObject prefab = enemyPrefabs[i % enemyPrefabs.Count];
-            if (prefab == null)
+            GameObject enemy = activeEnemies[i];
+            if (enemy == null)
             {
                 continue;
             }
 
-            float spawnX = i % 2 == 0
-                ? cameraLimits.x - enemySpawnScreenPadding
-                : cameraLimits.y + enemySpawnScreenPadding;
-
-            Vector3 spawnPosition = player != null
-                ? new Vector3(spawnX, player.position.y, 0f)
-                : new Vector3(spawnX, transform.position.y, 0f);
-
-            GameObject enemy = Instantiate(prefab, spawnPosition, Quaternion.identity);
-            activeEnemies.Add(enemy);
+            float side = i % 2 == 0 ? -1f : 1f;
+            float lane = i / 2;
+            float x = Mathf.Clamp(center.x + side * (35f + lane * 18f), cameraLimits.x, cameraLimits.y);
+            float y = center.y + GetSpawnVerticalOffset(i);
+            enemy.transform.position = new Vector3(x, y, enemy.transform.position.z);
+            PrepareEnemy(enemy, i);
         }
+    }
+
+    private Vector3 GetSpawnPosition(int enemyIndex)
+    {
+        Vector2 cameraLimits = GetCameraHorizontalLimits(0f);
+        float sidePadding = Mathf.Max(0f, enemySpawnScreenPadding);
+        float spawnX = enemyIndex % 2 == 0
+            ? cameraLimits.x + sidePadding
+            : cameraLimits.y - sidePadding;
+
+        spawnX = Mathf.Clamp(spawnX, cameraLimits.x, cameraLimits.y);
+
+        Vector3 center = player != null ? player.position : transform.position;
+        return new Vector3(spawnX, center.y + GetSpawnVerticalOffset(enemyIndex), 0f);
+    }
+
+    private void PrepareEnemy(GameObject enemy, int enemyIndex)
+    {
+        if (enemy == null)
+        {
+            return;
+        }
+
+        enemy.transform.localScale = new Vector3(
+            Mathf.Abs(enemyScale.x),
+            Mathf.Abs(enemyScale.y),
+            Mathf.Abs(enemyScale.z));
+    }
+
+    private float GetSpawnVerticalOffset(int enemyIndex)
+    {
+        return (enemyIndex % 4) switch
+        {
+            1 => 8f,
+            2 => -8f,
+            3 => 16f,
+            _ => 0f
+        };
     }
 
     private Vector2 GetCameraHorizontalLimits(float paddingOverride = -1f)

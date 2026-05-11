@@ -129,12 +129,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   moveSpeed: 35
-  stopDistance: 12
-  meleeAttackDistance: 14
+  stopDistance: 36
+  meleeAttackDistance: 45
   rangeAttackDistance: 55
   attackCooldown: 1.1
   attackDamage: 15
-  canUseRangeAttack: 1
+  canUseRangeAttack: 0
   maxHealth: 50
   destroyOnDeath: 1
   destroyDelay: 1.5

@@ -8,14 +8,15 @@ public class EnemyCombatStateController : MonoBehaviour
 
     [Header("Movement")]
     [SerializeField] private float moveSpeed = 35f;
-    [SerializeField] private float stopDistance = 12f;
+    [SerializeField] private float stopDistance = 36f;
 
     [Header("Attack")]
-    [SerializeField] private float meleeAttackDistance = 14f;
+    [SerializeField] private float meleeAttackDistance = 45f;
     [SerializeField] private float rangeAttackDistance = 55f;
     [SerializeField] private float attackCooldown = 1.1f;
     [SerializeField] private int attackDamage = 15;
-    [SerializeField] private bool canUseRangeAttack = true;
+    [SerializeField] private bool canUseRangeAttack = false;
+    [SerializeField] private bool logDamage = true;
 
     [Header("Health")]
     [SerializeField] private int maxHealth = 50;
@@ -27,6 +28,11 @@ public class EnemyCombatStateController : MonoBehaviour
     [SerializeField] private string meleeAttackParameter = "meleeAttack";
     [SerializeField] private string rangeAttackParameter = "rangeAttack";
     [SerializeField] private string isDeadParameter = "isDead";
+    [SerializeField] private string idleStateName = "EnemyIdle";
+    [SerializeField] private string walkStateName = "EnemyWalk";
+    [SerializeField] private string meleeAttackStateName = "EnemyMeleeAttack";
+    [SerializeField] private string rangeAttackStateName = "EnemyRangeAttack";
+    [SerializeField] private string deathStateName = "EnemyDeath";
 
     [Header("Events")]
     [SerializeField] private UnityEvent<GameObject> meleeAttackEvent;
@@ -35,8 +41,11 @@ public class EnemyCombatStateController : MonoBehaviour
 
     private Animator animator;
     private Rigidbody2D rb;
+    private CharacterHealth targetHealth;
     private int currentHealth;
     private float nextAttackTime;
+    private float attackAnimationEndTime;
+    private string currentAnimationState;
     private bool isDead;
 
     private void Awake()
@@ -87,10 +96,18 @@ public class EnemyCombatStateController : MonoBehaviour
                 target = characterHealth.transform;
             }
         }
+
+        CacheTargetHealth();
     }
 
     private void FixedUpdate()
     {
+        if (attackAnimationEndTime > 0f && Time.time >= attackAnimationEndTime)
+        {
+            attackAnimationEndTime = 0f;
+            PlayState(idleStateName);
+        }
+
         if (isDead || target == null)
         {
             StopWalking();
@@ -98,18 +115,19 @@ public class EnemyCombatStateController : MonoBehaviour
         }
 
         Vector2 toTarget = target.position - transform.position;
-        float distance = toTarget.magnitude;
+        float horizontalDistance = Mathf.Abs(toTarget.x);
+        float verticalDistance = Mathf.Abs(toTarget.y);
 
         FlipToward(toTarget.x);
 
-        if (distance <= meleeAttackDistance)
+        if (horizontalDistance <= meleeAttackDistance && verticalDistance <= meleeAttackDistance)
         {
             StopWalking();
             TryMeleeAttack();
             return;
         }
 
-        if (canUseRangeAttack && distance <= rangeAttackDistance)
+        if (canUseRangeAttack && horizontalDistance <= rangeAttackDistance)
         {
             StopWalking();
             TryRangeAttack();
@@ -117,6 +135,16 @@ public class EnemyCombatStateController : MonoBehaviour
         }
 
         WalkToward(toTarget);
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        TryAttackCollidingCharacter(collision.collider);
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        TryAttackCollidingCharacter(other);
     }
 
     public void TakeDamage(int damage)
@@ -143,6 +171,7 @@ public class EnemyCombatStateController : MonoBehaviour
         isDead = true;
         StopWalking();
         SetBool(isDeadParameter, true);
+        PlayState(deathStateName, true);
         deathEvent?.Invoke();
 
         if (destroyOnDeath)
@@ -159,17 +188,23 @@ public class EnemyCombatStateController : MonoBehaviour
             return;
         }
 
-        Vector2 velocity = toTarget.normalized * moveSpeed;
+        Vector2 nextPosition = (Vector2)transform.position + toTarget.normalized * moveSpeed * Time.fixedDeltaTime;
+        if (BeatEmUpStageDirector.Instance != null)
+        {
+            nextPosition = BeatEmUpStageDirector.Instance.ClampCombatantPosition(nextPosition);
+        }
+
         if (rb != null)
         {
-            rb.linearVelocity = velocity;
+            rb.MovePosition(nextPosition);
         }
         else
         {
-            transform.position += (Vector3)(velocity * Time.fixedDeltaTime);
+            transform.position = nextPosition;
         }
 
         SetBool(isWalkingParameter, true);
+        PlayState(walkStateName);
     }
 
     private void StopWalking()
@@ -180,6 +215,10 @@ public class EnemyCombatStateController : MonoBehaviour
         }
 
         SetBool(isWalkingParameter, false);
+        if (!isDead && attackAnimationEndTime <= 0f)
+        {
+            PlayState(idleStateName);
+        }
     }
 
     private void TryMeleeAttack()
@@ -191,8 +230,27 @@ public class EnemyCombatStateController : MonoBehaviour
 
         nextAttackTime = Time.time + attackCooldown;
         SetTrigger(meleeAttackParameter);
+        PlayAttackState(meleeAttackStateName);
         DamageTarget();
         meleeAttackEvent?.Invoke(target.gameObject);
+    }
+
+    private void TryAttackCollidingCharacter(Collider2D other)
+    {
+        if (isDead || other == null)
+        {
+            return;
+        }
+
+        CharacterHealth health = other.GetComponentInParent<CharacterHealth>();
+        if (health == null)
+        {
+            return;
+        }
+
+        targetHealth = health;
+        target = health.transform;
+        TryMeleeAttack();
     }
 
     private void TryRangeAttack()
@@ -204,6 +262,7 @@ public class EnemyCombatStateController : MonoBehaviour
 
         nextAttackTime = Time.time + attackCooldown;
         SetTrigger(rangeAttackParameter);
+        PlayAttackState(rangeAttackStateName);
         DamageTarget();
         rangeAttackEvent?.Invoke(target.gameObject);
     }
@@ -215,15 +274,49 @@ public class EnemyCombatStateController : MonoBehaviour
 
     private void DamageTarget()
     {
-        if (target == null)
+        CacheTargetHealth();
+
+        if (targetHealth == null)
+        {
+            if (logDamage)
+            {
+                Debug.LogWarning($"{name} attacked but could not find a {nameof(CharacterHealth)} target.");
+            }
+
+            return;
+        }
+
+        targetHealth.TakeDamage(attackDamage);
+        if (logDamage)
+        {
+            Debug.Log($"{name} dealt {attackDamage} damage to {targetHealth.name}. Health: {targetHealth.CurrentHealth}/{targetHealth.MaxHealth}");
+        }
+    }
+
+    private void CacheTargetHealth()
+    {
+        if (targetHealth != null)
         {
             return;
         }
 
-        CharacterHealth health = target.GetComponent<CharacterHealth>();
-        if (health != null)
+        if (target != null)
         {
-            health.TakeDamage(attackDamage);
+            targetHealth = target.GetComponent<CharacterHealth>();
+            if (targetHealth == null)
+            {
+                targetHealth = target.GetComponentInParent<CharacterHealth>();
+            }
+        }
+
+        if (targetHealth == null)
+        {
+            targetHealth = FindFirstObjectByType<CharacterHealth>();
+        }
+
+        if (targetHealth != null)
+        {
+            target = targetHealth.transform;
         }
     }
 
@@ -253,5 +346,45 @@ public class EnemyCombatStateController : MonoBehaviour
         {
             animator.SetTrigger(parameterName);
         }
+    }
+
+    private void PlayState(string stateName, bool restart = false)
+    {
+        if (animator == null || string.IsNullOrWhiteSpace(stateName))
+        {
+            return;
+        }
+
+        if (!restart && currentAnimationState == stateName)
+        {
+            return;
+        }
+
+        currentAnimationState = stateName;
+        animator.Play(stateName, 0, 0f);
+    }
+
+    private void PlayAttackState(string stateName)
+    {
+        PlayState(stateName, true);
+        attackAnimationEndTime = Time.time + GetAnimationLength(stateName);
+    }
+
+    private float GetAnimationLength(string stateName)
+    {
+        if (animator == null || animator.runtimeAnimatorController == null)
+        {
+            return 0.35f;
+        }
+
+        foreach (AnimationClip clip in animator.runtimeAnimatorController.animationClips)
+        {
+            if (clip.name == stateName)
+            {
+                return clip.length;
+            }
+        }
+
+        return 0.35f;
     }
 }
