@@ -103,7 +103,7 @@ Animator:
   m_GameObject: {fileID: 2827843396974141033}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2b92ab6ead23a3a4ca5b74110a7ae76c, type: 2}
+  m_Controller: {fileID: 9100000, guid: 9ebd1c7bd2939524285654539cc8e4ed, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -128,13 +128,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  moveSpeed: 35
+  moveSpeed: 75
   stopDistance: 36
+  lockToGroundY: 1
+  lockedGroundY: 0
   meleeAttackDistance: 45
   rangeAttackDistance: 55
   attackCooldown: 1.1
   attackDamage: 15
   canUseRangeAttack: 0
+  logDamage: 1
   maxHealth: 50
   destroyOnDeath: 1
   destroyDelay: 1.5
@@ -142,6 +145,11 @@ MonoBehaviour:
   meleeAttackParameter: meleeAttack
   rangeAttackParameter: rangeAttack
   isDeadParameter: isDead
+  idleStateName: EnemyIdle
+  walkStateName: EnemyWalk
+  meleeAttackStateName: EnemyMeleeAttack
+  rangeAttackStateName: EnemyRangeAttack
+  deathStateName: EnemyDeath
   meleeAttackEvent:
     m_PersistentCalls:
       m_Calls: []

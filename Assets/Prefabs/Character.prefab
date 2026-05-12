@@ -107,7 +107,7 @@ Animator:
   m_GameObject: {fileID: 8676905630929598246}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3b0410bb30703be4f95adb300176699b, type: 2}
+  m_Controller: {fileID: 9100000, guid: c81ad7ae787d92443841ae691d2d8197, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -154,10 +154,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fd50c96297f4de44a1f556dd894b80c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 100
-  runMultiplier: 1.6
-  jumpVelocity: 85
-  gravity: 220
+  moveSpeed: 300
+  runMultiplier: 1.75
+  jumpVelocity: 285
+  gravity: 330
+  alignGroundWithStageDirector: 1
+  autoTuneJumpForBoss: 1
+  bossJumpClearancePadding: 20
   idleStateName: PlayerIdle
   walkStateName: PlayerWalk
   runStateName: PlayerRun

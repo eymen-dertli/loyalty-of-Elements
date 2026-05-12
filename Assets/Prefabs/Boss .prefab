@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 7550247894759424176}
   - component: {fileID: 7458296789006981293}
   - component: {fileID: 2652836681361703810}
-  m_Layer: 0
+  - component: {fileID: 491010005}
+  m_Layer: 6
   m_Name: 'Boss '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,8 +28,8 @@ Transform:
   m_GameObject: {fileID: 6144315305108388791}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 128.3004, y: -14.0908, z: 0}
-  m_LocalScale: {x: -57.56556, y: 61.22094, z: 17.058586}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 42, y: 42, z: 42}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -114,3 +115,47 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &491010005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6144315305108388791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ac040447afe401a9edba3d33f4f3091, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  moveSpeed: 55
+  stopDistance: 44
+  lockToGroundY: 1
+  lockedGroundY: 0
+  meleeAttackDistance: 54
+  rangeAttackDistance: 70
+  attackCooldown: 1.25
+  attackDamage: 28
+  canUseRangeAttack: 0
+  logDamage: 1
+  maxHealth: 3000
+  destroyOnDeath: 1
+  destroyDelay: 1.5
+  isWalkingParameter: isWalking
+  meleeAttackParameter: meleeAttack
+  rangeAttackParameter: rangeAttack
+  isDeadParameter: isDead
+  idleStateName: BossIdle
+  walkStateName: BossWalk
+  meleeAttackStateName: BossPunchAttack
+  rangeAttackStateName: BossRunAttack
+  deathStateName: BossDeath
+  meleeAttackEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  rangeAttackEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  deathEvent:
+    m_PersistentCalls:
+      m_Calls: []

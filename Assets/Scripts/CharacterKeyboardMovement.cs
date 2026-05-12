@@ -3,10 +3,13 @@ using UnityEngine.InputSystem;
 
 public class CharacterKeyboardMovement : MonoBehaviour
 {
-    [SerializeField] private float moveSpeed = 100f;
-    [SerializeField] private float runMultiplier = 1.6f;
-    [SerializeField] private float jumpVelocity = 85f;
-    [SerializeField] private float gravity = 220f;
+    [SerializeField] private float moveSpeed = 300f;
+    [SerializeField] private float runMultiplier = 1.75f;
+    [SerializeField] private float jumpVelocity = 285f;
+    [SerializeField] private float gravity = 330f;
+    [SerializeField] private bool alignGroundWithStageDirector = true;
+    [SerializeField] private bool autoTuneJumpForBoss = true;
+    [SerializeField] private float bossJumpClearancePadding = 20f;
     [SerializeField] private string idleStateName = "PlayerIdle";
     [SerializeField] private string walkStateName = "PlayerWalk";
     [SerializeField] private string runStateName = "PlayerRun";
@@ -47,6 +50,30 @@ public class CharacterKeyboardMovement : MonoBehaviour
         bodyCollider.size = new Vector2(0.7f, 1.25f);
         bodyCollider.offset = new Vector2(0f, -0.1f);
         groundY = transform.position.y;
+    }
+
+    private void Start()
+    {
+        if (BeatEmUpStageDirector.Instance == null)
+        {
+            return;
+        }
+
+        if (alignGroundWithStageDirector)
+        {
+            groundY = BeatEmUpStageDirector.Instance.CombatGroundY;
+            Vector3 position = transform.position;
+            position.y = groundY;
+            transform.position = position;
+        }
+
+        if (autoTuneJumpForBoss)
+        {
+            float recommendedJumpVelocity = BeatEmUpStageDirector.Instance.GetRecommendedJumpVelocity(
+                gravity,
+                bossJumpClearancePadding);
+            jumpVelocity = Mathf.Max(jumpVelocity, recommendedJumpVelocity);
+        }
     }
 
     private void Update()

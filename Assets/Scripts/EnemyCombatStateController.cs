@@ -7,8 +7,10 @@ public class EnemyCombatStateController : MonoBehaviour
     [SerializeField] private Transform target;
 
     [Header("Movement")]
-    [SerializeField] private float moveSpeed = 35f;
+    [SerializeField] private float moveSpeed = 75f;
     [SerializeField] private float stopDistance = 36f;
+    [SerializeField] private bool lockToGroundY = true;
+    [SerializeField] private float lockedGroundY;
 
     [Header("Attack")]
     [SerializeField] private float meleeAttackDistance = 45f;
@@ -48,6 +50,8 @@ public class EnemyCombatStateController : MonoBehaviour
     private string currentAnimationState;
     private bool isDead;
 
+    public bool IsDead => isDead;
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -60,6 +64,7 @@ public class EnemyCombatStateController : MonoBehaviour
         rb.bodyType = RigidbodyType2D.Dynamic;
         rb.gravityScale = 0f;
         rb.freezeRotation = true;
+        rb.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionY;
         rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
         rb.interpolation = RigidbodyInterpolation2D.Interpolate;
 
@@ -72,6 +77,7 @@ public class EnemyCombatStateController : MonoBehaviour
         bodyCollider.isTrigger = false;
         bodyCollider.size = new Vector2(0.95f, 1.35f);
         bodyCollider.offset = new Vector2(0f, -0.08f);
+        lockedGroundY = transform.position.y;
         currentHealth = maxHealth;
 
         if (target == null)
@@ -102,6 +108,8 @@ public class EnemyCombatStateController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        LockToGroundY();
+
         if (attackAnimationEndTime > 0f && Time.time >= attackAnimationEndTime)
         {
             attackAnimationEndTime = 0f;
@@ -161,6 +169,20 @@ public class EnemyCombatStateController : MonoBehaviour
         }
     }
 
+    public void SetMaxHealth(int health)
+    {
+        maxHealth = Mathf.Max(1, health);
+        currentHealth = maxHealth;
+        isDead = false;
+    }
+
+    public void SetGroundY(float groundY)
+    {
+        lockedGroundY = groundY;
+        lockToGroundY = true;
+        LockToGroundY();
+    }
+
     public void Die()
     {
         if (isDead)
@@ -182,13 +204,18 @@ public class EnemyCombatStateController : MonoBehaviour
 
     private void WalkToward(Vector2 toTarget)
     {
-        if (toTarget.magnitude <= stopDistance)
+        float horizontalDistance = Mathf.Abs(toTarget.x);
+        if (horizontalDistance <= stopDistance)
         {
             StopWalking();
             return;
         }
 
-        Vector2 nextPosition = (Vector2)transform.position + toTarget.normalized * moveSpeed * Time.fixedDeltaTime;
+        float directionX = Mathf.Sign(toTarget.x);
+        Vector2 nextPosition = new Vector2(
+            transform.position.x + directionX * moveSpeed * Time.fixedDeltaTime,
+            lockToGroundY ? lockedGroundY : transform.position.y);
+
         if (BeatEmUpStageDirector.Instance != null)
         {
             nextPosition = BeatEmUpStageDirector.Instance.ClampCombatantPosition(nextPosition);
@@ -213,6 +240,8 @@ public class EnemyCombatStateController : MonoBehaviour
         {
             rb.linearVelocity = Vector2.zero;
         }
+
+        LockToGroundY();
 
         SetBool(isWalkingParameter, false);
         if (!isDead && attackAnimationEndTime <= 0f)
@@ -386,5 +415,26 @@ public class EnemyCombatStateController : MonoBehaviour
         }
 
         return 0.35f;
+    }
+
+    private void LockToGroundY()
+    {
+        if (!lockToGroundY)
+        {
+            return;
+        }
+
+        Vector3 position = transform.position;
+        if (!Mathf.Approximately(position.y, lockedGroundY))
+        {
+            position.y = lockedGroundY;
+            transform.position = position;
+        }
+
+        if (rb != null)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
+            rb.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionY;
+        }
     }
 }
