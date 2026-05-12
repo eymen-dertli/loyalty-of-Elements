@@ -1,0 +1,1038 @@
+fileFormatVersion: 2
+guid: a35479e3ece3535458e2b4f57ac203ad
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5408952349311202010
+    second: Canavar sprite_0
+  - first:
+      213: 6836111283274584070
+    second: Canavar sprite_1
+  - first:
+      213: -3820675552979329207
+    second: Canavar sprite_2
+  - first:
+      213: -6206419143827530723
+    second: Canavar sprite_3
+  - first:
+      213: 3751984992782564920
+    second: Canavar sprite_4
+  - first:
+      213: 5755624258358327075
+    second: Canavar sprite_5
+  - first:
+      213: 3041782049822524698
+    second: Canavar sprite_6
+  - first:
+      213: -1605277039369486943
+    second: Canavar sprite_7
+  - first:
+      213: -3016463023832429004
+    second: Canavar sprite_8
+  - first:
+      213: -2725913346500507968
+    second: Canavar sprite_9
+  - first:
+      213: 1624349580558231050
+    second: Canavar sprite_10
+  - first:
+      213: -2529011860432584647
+    second: Canavar sprite_11
+  - first:
+      213: 4282453139024002659
+    second: Canavar sprite_12
+  - first:
+      213: 1907444989087182325
+    second: Canavar sprite_13
+  - first:
+      213: -7337862071222719062
+    second: Canavar sprite_14
+  - first:
+      213: 3604674633286584234
+    second: Canavar sprite_15
+  - first:
+      213: 4490591714820691220
+    second: Canavar sprite_16
+  - first:
+      213: 3297404258150531700
+    second: Canavar sprite_17
+  - first:
+      213: -1019448060277106654
+    second: Canavar sprite_18
+  - first:
+      213: 8181785048859739044
+    second: Canavar sprite_19
+  - first:
+      213: 3509836803445168166
+    second: Canavar sprite_20
+  - first:
+      213: -3322518532154915061
+    second: Canavar sprite_21
+  - first:
+      213: -2099870376180717108
+    second: Canavar sprite_22
+  - first:
+      213: -7556261921237777813
+    second: Canavar sprite_23
+  - first:
+      213: 6870973333571018546
+    second: Canavar sprite_24
+  - first:
+      213: 5354681229785442888
+    second: Canavar sprite_25
+  - first:
+      213: -8944216797043028242
+    second: Canavar sprite_26
+  - first:
+      213: 3699136810041233550
+    second: Canavar sprite_27
+  - first:
+      213: -5831503479158183615
+    second: Canavar sprite_28
+  - first:
+      213: -4316754761679304152
+    second: Canavar sprite_29
+  - first:
+      213: -9193430260982969343
+    second: Canavar sprite_30
+  - first:
+      213: -7804359647981655052
+    second: Canavar sprite_31
+  - first:
+      213: -2002722465561724491
+    second: Canavar sprite_32
+  - first:
+      213: 6720774315076346346
+    second: Canavar sprite_33
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Canavar sprite_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 818
+        width: 118
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62d8a440f7a8fe4b0800000000000000
+      internalID: -5408952349311202010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Canavar sprite_1
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 817
+        width: 120
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6001f9c2efebede50800000000000000
+      internalID: 6836111283274584070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Canavar sprite_2
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 817
+        width: 119
+        height: 152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94fd5aec3db3afac0800000000000000
+      internalID: -3820675552979329207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Canavar sprite_3
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 818
+        width: 118
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1cd9f4fbae5ed9a0800000000000000
+      internalID: -6206419143827530723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Canavar sprite_4
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 818
+        width: 87
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83eb669d87ab11430800000000000000
+      internalID: 3751984992782564920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Canavar sprite_5
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 818
+        width: 83
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 327b114b4c510ef40800000000000000
+      internalID: 5755624258358327075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Canavar sprite_6
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 818
+        width: 96
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a15c4d388a4963a20800000000000000
+      internalID: 3041782049822524698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Canavar sprite_7
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 818
+        width: 79
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ad7a4ea909e8b9e0800000000000000
+      internalID: -1605277039369486943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Canavar sprite_8
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 818
+        width: 84
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43e0e5a9cde5326d0800000000000000
+      internalID: -3016463023832429004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Canavar sprite_9
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 583
+        width: 109
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c6475df04c9b2ad0800000000000000
+      internalID: -2725913346500507968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Canavar sprite_10
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 583
+        width: 110
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a066a3c5659da8610800000000000000
+      internalID: 1624349580558231050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Canavar sprite_11
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 585
+        width: 130
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9308a2abc1527ecd0800000000000000
+      internalID: -2529011860432584647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Canavar sprite_12
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 583
+        width: 119
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36e38c6c0745e6b30800000000000000
+      internalID: 4282453139024002659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Canavar sprite_13
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 588
+        width: 102
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fde32b8c1b987a10800000000000000
+      internalID: 1907444989087182325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Canavar sprite_14
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 596
+        width: 114
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aad25f9e25daa2a90800000000000000
+      internalID: -7337862071222719062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Canavar sprite_15
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 620
+        width: 114
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa788e70b70660230800000000000000
+      internalID: 3604674633286584234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Canavar sprite_16
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 583
+        width: 99
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41513395f59c15e30800000000000000
+      internalID: 4490591714820691220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Canavar sprite_17
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 322
+        width: 105
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4724cefc3bbb2cd20800000000000000
+      internalID: 3297404258150531700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Canavar sprite_18
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 322
+        width: 132
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 228d834f3613ad1f0800000000000000
+      internalID: -1019448060277106654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Canavar sprite_19
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 322
+        width: 140
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a303e9272a8b8170800000000000000
+      internalID: 8181785048859739044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Canavar sprite_20
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 322
+        width: 108
+        height: 149
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62811f01af175b030800000000000000
+      internalID: 3509836803445168166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Canavar sprite_21
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 336
+        width: 118
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b07014b9ffa04e1d0800000000000000
+      internalID: -3322518532154915061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Canavar sprite_22
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 325
+        width: 119
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc9e169b403cbd2e0800000000000000
+      internalID: -2099870376180717108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Canavar sprite_23
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 329
+        width: 115
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b62cfc241d3c22790800000000000000
+      internalID: -7556261921237777813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Canavar sprite_24
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 332
+        width: 119
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23f9ea8c7d99a5f50800000000000000
+      internalID: 6870973333571018546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Canavar sprite_25
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 139
+        width: 123
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84a20da4536af4a40800000000000000
+      internalID: 5354681229785442888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Canavar sprite_26
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 140
+        width: 123
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eee0b2a2632cfd380800000000000000
+      internalID: -8944216797043028242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Canavar sprite_27
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 140
+        width: 127
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8054127459f55330800000000000000
+      internalID: 3699136810041233550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Canavar sprite_28
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 139
+        width: 367
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 149625a7b76521fa0800000000000000
+      internalID: -5831503479158183615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Canavar sprite_29
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 142
+        width: 123
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82a01a75a6ec714c0800000000000000
+      internalID: -4316754761679304152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Canavar sprite_30
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 3
+        width: 114
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10c88c2f2ef5a6080800000000000000
+      internalID: -9193430260982969343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Canavar sprite_31
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 3
+        width: 108
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fb29aadf3851b390800000000000000
+      internalID: -7804359647981655052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Canavar sprite_32
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 4
+        width: 151
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b9bf784786e434e0800000000000000
+      internalID: -2002722465561724491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Canavar sprite_33
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 5
+        width: 164
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae1e1b1a1acf44d50800000000000000
+      internalID: 6720774315076346346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Canavar sprite_34
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 141
+        width: 119
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f6329d511601604098ad162f4dcf13d
+      internalID: 1715023743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c4e9bd361ffda8242bf92c891d5a72e5
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Canavar sprite_0: -5408952349311202010
+      Canavar sprite_1: 6836111283274584070
+      Canavar sprite_10: 1624349580558231050
+      Canavar sprite_11: -2529011860432584647
+      Canavar sprite_12: 4282453139024002659
+      Canavar sprite_13: 1907444989087182325
+      Canavar sprite_14: -7337862071222719062
+      Canavar sprite_15: 3604674633286584234
+      Canavar sprite_16: 4490591714820691220
+      Canavar sprite_17: 3297404258150531700
+      Canavar sprite_18: -1019448060277106654
+      Canavar sprite_19: 8181785048859739044
+      Canavar sprite_2: -3820675552979329207
+      Canavar sprite_20: 3509836803445168166
+      Canavar sprite_21: -3322518532154915061
+      Canavar sprite_22: -2099870376180717108
+      Canavar sprite_23: -7556261921237777813
+      Canavar sprite_24: 6870973333571018546
+      Canavar sprite_25: 5354681229785442888
+      Canavar sprite_26: -8944216797043028242
+      Canavar sprite_27: 3699136810041233550
+      Canavar sprite_28: -5831503479158183615
+      Canavar sprite_29: -4316754761679304152
+      Canavar sprite_3: -6206419143827530723
+      Canavar sprite_30: -9193430260982969343
+      Canavar sprite_31: -7804359647981655052
+      Canavar sprite_32: -2002722465561724491
+      Canavar sprite_33: 6720774315076346346
+      Canavar sprite_34: 1715023743
+      Canavar sprite_35: -787450371
+      Canavar sprite_4: 3751984992782564920
+      Canavar sprite_5: 5755624258358327075
+      Canavar sprite_6: 3041782049822524698
+      Canavar sprite_7: -1605277039369486943
+      Canavar sprite_8: -3016463023832429004
+      Canavar sprite_9: -2725913346500507968
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
