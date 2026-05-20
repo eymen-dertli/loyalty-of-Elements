@@ -98,7 +98,8 @@ public class CharacterKeyboardMovement : MonoBehaviour
         }
 
         bool isGrounded = IsGrounded();
-        bool isRunning = keyboard.sKey.isPressed && !Mathf.Approximately(horizontalInput, 0f);
+        bool isRunning = (keyboard.leftShiftKey.isPressed || keyboard.rightShiftKey.isPressed)
+            && !Mathf.Approximately(horizontalInput, 0f);
 
         if (isGrounded && keyboard.spaceKey.wasPressedThisFrame)
         {

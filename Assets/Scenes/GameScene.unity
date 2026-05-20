@@ -290,8 +290,6 @@ MonoBehaviour:
   segmentsAfter: 3
   loopSegments: 0
   recycleDistanceInSegments: 2
-  previousTargetX: 0
-  hasPreviousTargetX: 0
 --- !u!212 &39693691
 SpriteRenderer:
   serializedVersion: 2
@@ -906,8 +904,6 @@ MonoBehaviour:
   segmentsAfter: 3
   loopSegments: 0
   recycleDistanceInSegments: 2
-  previousTargetX: 0
-  hasPreviousTargetX: 0
 --- !u!1 &1271343325
 GameObject:
   m_ObjectHideFlags: 0
@@ -944,8 +940,6 @@ MonoBehaviour:
   segmentsAfter: 3
   loopSegments: 0
   recycleDistanceInSegments: 2
-  previousTargetX: 0
-  hasPreviousTargetX: 0
 --- !u!212 &1271343327
 SpriteRenderer:
   serializedVersion: 2
@@ -1548,8 +1542,6 @@ MonoBehaviour:
   segmentsAfter: 3
   loopSegments: 0
   recycleDistanceInSegments: 2
-  previousTargetX: 0
-  hasPreviousTargetX: 0
 --- !u!212 &1722899142
 SpriteRenderer:
   serializedVersion: 2
@@ -1869,8 +1861,6 @@ MonoBehaviour:
   segmentsAfter: 3
   loopSegments: 0
   recycleDistanceInSegments: 2
-  previousTargetX: 0
-  hasPreviousTargetX: 0
 --- !u!212 &1859559566
 SpriteRenderer:
   serializedVersion: 2
@@ -2044,7 +2034,6 @@ MonoBehaviour:
   - {fileID: 1304612657}
   enemyPrefabs:
   - {fileID: 2827843396974141033, guid: 74eda0d2dbd328949bdc2fcf92b94b35, type: 3}
-  hasTriggered: 0
 --- !u!1 &1953500881
 GameObject:
   m_ObjectHideFlags: 0
@@ -2081,8 +2070,6 @@ MonoBehaviour:
   segmentsAfter: 3
   loopSegments: 0
   recycleDistanceInSegments: 2
-  previousTargetX: 0
-  hasPreviousTargetX: 0
 --- !u!212 &1953500883
 SpriteRenderer:
   serializedVersion: 2
@@ -2445,7 +2432,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5964120583907782147, guid: cbde17abd7946ad4b944c33febafd350, type: 3}
       propertyPath: jumpVelocity
-      value: 285
+      value: 170
       objectReference: {fileID: 0}
     - target: {fileID: 6819374558851042814, guid: cbde17abd7946ad4b944c33febafd350, type: 3}
       propertyPath: ultimate.speed
@@ -2489,6 +2476,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 491010005, guid: 4d32a7f3ee4049940ba2092433d0b9c7, type: 3}
+      propertyPath: maxHealth
+      value: 1500
+      objectReference: {fileID: 0}
     - target: {fileID: 6144315305108388791, guid: 4d32a7f3ee4049940ba2092433d0b9c7, type: 3}
       propertyPath: m_Name
       value: 'Boss '
