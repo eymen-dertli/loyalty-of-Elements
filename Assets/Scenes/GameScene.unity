@@ -705,9 +705,12 @@ MonoBehaviour:
   enemyScale: {x: 25, y: 25, z: 25}
   thirdSectionSpawnDelay: 3
   fourthSectionSpawnDelay: 2
+  startWithBossEncounter: 1
   bossPrefab: {fileID: 6144315305108388791, guid: 4d32a7f3ee4049940ba2092433d0b9c7, type: 3}
   bossScale: {x: 42, y: 42, z: 42}
-  bossHealth: 3000
+  overrideBossHealth: 1
+  bossHealth: 300
+  spawnBossMinions: 0
   bossMinionSpawnInterval: 8
   bossMinionsPerWave: 3
 --- !u!1 &619394800

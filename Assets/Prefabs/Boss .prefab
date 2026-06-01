@@ -138,7 +138,7 @@ MonoBehaviour:
   attackDamage: 28
   canUseRangeAttack: 0
   logDamage: 1
-  maxHealth: 3000
+  maxHealth: 300
   destroyOnDeath: 1
   destroyDelay: 1.5
   isWalkingParameter: isWalking

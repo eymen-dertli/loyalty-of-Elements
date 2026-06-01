@@ -33,9 +33,12 @@ public class BeatEmUpStageDirector : MonoBehaviour
     [SerializeField, Min(0f)] private float fourthSectionSpawnDelay = 2f;
 
     [Header("Boss")]
+    [SerializeField] private bool startWithBossEncounter = false;
     [SerializeField] private GameObject bossPrefab;
     [SerializeField] private Vector3 bossScale = new Vector3(42f, 42f, 42f);
-    [SerializeField, Min(1)] private int bossHealth = 3000;
+    [SerializeField] private bool overrideBossHealth = false;
+    [SerializeField, Min(1)] private int bossHealth = 300;
+    [SerializeField] private bool spawnBossMinions = true;
     [SerializeField, Min(0.1f)] private float bossMinionSpawnInterval = 8f;
     [SerializeField, Min(1)] private int bossMinionsPerWave = 3;
 
@@ -80,6 +83,11 @@ public class BeatEmUpStageDirector : MonoBehaviour
         if (useAutomaticSectionEncounters && disablePreplacedEnemiesOnStart)
         {
             DisablePreplacedEnemies();
+        }
+
+        if (startWithBossEncounter)
+        {
+            StartBossEncounter();
         }
     }
 
@@ -332,7 +340,7 @@ public class BeatEmUpStageDirector : MonoBehaviour
         }
 
         finalBoss = Instantiate(prefab, GetBossSpawnPosition(), Quaternion.identity);
-        PrepareEnemy(finalBoss, 0, bossScale, bossHealth);
+        PrepareEnemy(finalBoss, 0, bossScale, overrideBossHealth ? bossHealth : 0);
         activeEnemies.Add(finalBoss);
 
         if (cameraFollow != null)
@@ -340,7 +348,10 @@ public class BeatEmUpStageDirector : MonoBehaviour
             cameraFollow.LockToCurrentPosition();
         }
 
-        bossMinionRoutine = StartCoroutine(SpawnBossMinions());
+        if (spawnBossMinions)
+        {
+            bossMinionRoutine = StartCoroutine(SpawnBossMinions());
+        }
     }
 
     private IEnumerator SpawnBossMinions()
@@ -517,6 +528,8 @@ public class BeatEmUpStageDirector : MonoBehaviour
 
     private void EndEncounter()
     {
+        bool completedFinalEncounter = finalEncounter;
+
         encounterLocked = false;
         finalEncounter = false;
         finalBoss = null;
@@ -527,6 +540,11 @@ public class BeatEmUpStageDirector : MonoBehaviour
         if (cameraFollow != null)
         {
             cameraFollow.Unlock();
+        }
+
+        if (completedFinalEncounter)
+        {
+            GameWinController.ShowWin();
         }
     }
 

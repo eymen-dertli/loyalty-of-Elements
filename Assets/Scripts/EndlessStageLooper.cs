@@ -1,5 +1,6 @@
 using UnityEngine;
 
+#pragma warning disable 0414
 public class EndlessStageLooper : MonoBehaviour
 {
     [SerializeField] private Transform target;
@@ -43,3 +44,4 @@ public class EndlessStageLooper : MonoBehaviour
         hasPreviousTargetX = true;
     }
 }
+#pragma warning restore 0414

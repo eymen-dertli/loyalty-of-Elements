@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class CharacterHealth : MonoBehaviour
 {
-    [SerializeField] private int maxHealth = 100;
+    [SerializeField] private int maxHealth = 500;
     [SerializeField] private HealthBar healthBar;
     [SerializeField] private UnityEvent<int, int> healthChanged;
     [SerializeField] private UnityEvent died;
